@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/background.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,20 +26,33 @@
   					
 				   </svg>
 				  
-  						<text id="mobileName" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">MIKE TREIS</text>
+  						<!--<text id="mobileName" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">MICHAEL TREIS</text>-->
 				   
-							
+						<svg id="svg_mobile_name" viewBox="0 0 56 8">
+  							<text x="0" y="5">MICHAEL TREIS</text>
+					    </svg>	
 						
-						<nav>
+						<nav id="desktop_nav">
 							<ul>
-								<li><a href="#rct">RCT STORY</a></li>
-								<li><a href="#clue">CLUE</a></li>
-								<li><a href="#root">ROOT DIG</a></li>
-								<li><a href="#verizon">VERIZON TRIVIA</a></li>
-								<li><a href="#jeopardy">JEOPARDY</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a id="pic1" href="#rct">RCT STORY</a></li>
+								<li><a id="pic2" href="#clue">CLUE</a></li>
+								<li><a id="pic3" href="#root">ROOT DIG</a></li>
+								<li><a id="pic4" href="#verizon">VERIZON TRIVIA</a></li>
+								<li><a id="pic5" href="#jeopardy">JEOPARDY</a></li>
+								
 							</ul>
 						</nav>
+
+						<div id="mobile_nav">
+							
+							<a href="#rct"><img src="images/mobile_icons/1.jpg"></a>
+							<a href="#clue"><img src="images/mobile_icons/2.jpg"></a>
+							<a href="#root"><img src="images/mobile_icons/3.jpg"></a>
+							<a href="#verizon"><img src="images/mobile_icons/4.jpg"></a>
+							<a href="#jeopardy"><img src="images/mobile_icons/5.jpg"></a>
+						    
+						</div>
+
 					</header>
 
 				<!-- Main -->
@@ -52,9 +66,9 @@
 
 								<p>Alongside the rest of the team at Graphite Lab, I contributed art, animation, and C# programming on this project.</p>
 
-								<video width="100%" height="auto" controls poster="images/rct/poster.jpg"><source src="images/rct/trailer.mp4" type="video/mp4"></video>
-								<span class="image main"><img src="images/rct/1.jpg" alt="" /></span>
-								<span class="image main"><img src="images/rct/3.jpg" alt="" /></span>
+								<video width="100%" height="auto" controls poster="images/rct/poster.jpg"><source src="images/RCT/trailer.mp4" type="video/mp4"></video>
+								<span class="image main"><img src="images/RCT/1.jpg" alt="" /></span>
+								<span class="image main"><img src="images/RCT/3.jpg" alt="" /></span>
 								
 								
 							</article>
@@ -97,7 +111,7 @@
 								
 								<p>The Verizon Trivia web app was developed to increase visitor engagement at drive-in theaaters during the covid pandemic. Users can join various round of movie trivia using their mobile devices and answer questions displayed on screen to earn prizes before the show begins.</p>
 
-								<p>This was a 2 person development team with myself doing front end design and development. All back-end logic and networking was handled by Rob Santos.</p>
+								<p>This was a 2 person development team with myself doing front end development. All back-end logic and networking was handled by Rob Santos.</p>
 
 								<span class="image main"><img src="images/Verizon/1.png" alt="" /></span>
 								<span class="image main"><img src="images/Verizon/2.png" alt="" /></span>
@@ -132,19 +146,11 @@
 			</div>
 
 		<!-- BG -->
-			<div id="background_holder">
+			<div id="background_holder"></div>
 				
-				<!-- <video autoplay muted loop id="myVideo">
-  			<source src="./images/loop.mp4" type="video/mp4">
-  				Video Failed To Load :(
-				</video> -->
 				
-			</div>
-			<div id="noise">
-			</div>
-			
-
-		<!-- Scripts -->
+				
+		    <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
@@ -152,6 +158,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/tilt.js"></script>
 			<script src="assets/js/preview.js"></script>
+			<script src="assets/js/bg.js"></script>
 
 	</body>
 </html>

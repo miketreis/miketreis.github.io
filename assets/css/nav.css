@@ -1,0 +1,50 @@
+@media screen and (min-width: 851px) {
+
+	#desktop_nav{
+        display: block;
+    }
+    #mobile_nav{
+        display: none;
+    }
+    #wrapper{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
+	#desktop_nav{
+        display: none;
+    }
+    #mobile_nav{
+        display: block;
+    }
+    #wrapper{
+        justify-content: flex-start;
+    }
+
+}
+
+#mobile_nav{
+    
+    width: 80%;
+
+}
+
+#mobile_nav a{
+
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-bottom: 25px;
+    
+}
+
+#mobile_nav a img{
+
+    width: 100%;
+    height: auto;
+    
+}

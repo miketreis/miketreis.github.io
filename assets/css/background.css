@@ -5,13 +5,17 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    //background: linear-gradient(-135deg, white, black, black, black), url("../../images/noise.svg");
-    background: linear-gradient(180deg, grey, black);
-    background-size: 100% 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../../images/bg/4.jpg");
+    //background: linear-gradient(180deg, grey, black);
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
     //animation: gradient 3s ease-in-out infinite;
 
    
 }
+
+
 
 @keyframes gradient {
 
@@ -64,7 +68,7 @@
     stroke-width: 2;
     stroke-dasharray: 100%;
     stroke-dashoffset: 100%;
-    animation: textStrokeAnim 30000ms linear; infinite;
+    animation: textStrokeAnim 30000ms linear infinite;
 }
 #backName{
 
@@ -82,6 +86,18 @@
     letter-spacing: 4px;
 
 	display: none !important;
+}
+
+#svg_mobile_name{
+
+    width: 82%;
+    font-weight: 900;
+    font-size: 7px;
+    letter-spacing: 0.6px;
+    color: white;
+    fill: white;
+
+    display: none !important;
 }
 @keyframes textStrokeAnim {
     0% {
@@ -116,7 +132,7 @@
     
     }
 
-    #mobileName{
+    #svg_mobile_name{
 
     display: inline-block !important;
     }
