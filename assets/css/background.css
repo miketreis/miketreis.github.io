@@ -72,7 +72,7 @@
 }
 #backName{
 
-    stroke: grey !important;
+    //stroke: grey !important;
     stroke-width: 1.5 !important;
     stroke-dasharray: none !important;
     stroke-dashoffset: none !important;

@@ -1600,7 +1600,7 @@ input, select, textarea {
 				transform: translateY(0);
 				opacity: 1;
 
-				box-shadow: 0 0 30px 7px white;
+				box-shadow: 0 0 10px 4px white;
 			}
 
 			#main article .close {
