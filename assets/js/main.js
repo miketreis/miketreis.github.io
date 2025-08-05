@@ -302,9 +302,9 @@
 
 		// Events.
 			$body.on('click', function(event) {
-
+                  
 				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
+					if ($body.hasClass('is-article-visible') && $(window).width() > 850 )
 						$main._hide(true);
 
 			});

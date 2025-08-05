@@ -22,13 +22,14 @@
     }
     #wrapper{
         justify-content: flex-start;
+        margin-top: 50px;
     }
 
 }
 
 #mobile_nav{
     
-    width: 80%;
+    width: 100%;
 
 }
 
@@ -38,7 +39,7 @@
     width: 100%;
     height: auto;
     border: none;
-    margin-bottom: 25px;
+    //margin-bottom: 25px;
     
 }
 
@@ -47,4 +48,97 @@
     width: 100%;
     height: auto;
     
+}
+
+
+
+
+  /* Navbar MOBILE */
+    .navbar {
+      position: fixed !important;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background-color: rgba(40,40,40,1);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 1.5rem;
+      z-index: 1000;
+    }
+
+    .navbar .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      width: 30px;
+  height: 16px;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none;
+    }
+
+    .bar {
+  height: 3px;
+  width: 20px;
+  background-color: white;
+  transition: all 0.3s ease;
+  //border-radius: 2px;
+}
+
+/* Transform hamburger into X */
+.hamburger.active {
+    background-color: rgba(0,0,0,0) !important;
+}
+.hamburger:hover {
+    background-color: rgba(0,0,0,0) !important;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9.5px);
+}
+
+  /* Slide-down Menu */
+.slide-down-menu {
+  position: fixed;
+  top: 50px; /* height of the navbar */
+  left: 0;
+  width: 100%;
+  background-color: rgba(40,40,40,1);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  z-index: 999;
+}
+
+.slide-down-menu.open {
+  max-height: 300px; /* adjust depending on how many links */
+  padding-bottom: 1rem;
+}
+
+.slide-down-menu a {
+  display: block;
+  padding: 5px 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  border-bottom: none;
+}
+
+.slide-down-menu a:hover {
+  background-color: #333;
 }

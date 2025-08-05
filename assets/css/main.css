@@ -1265,7 +1265,7 @@ input, select, textarea {
 		@media screen and (max-width: 850px) {
 
 			#wrapper {
-				padding: 1rem;
+				//padding: 1rem;
 			}
 
 		}
@@ -1471,7 +1471,7 @@ input, select, textarea {
 		@media screen and (max-width: 1000px) {
 
 			#header > * {
-				margin-top: 2rem;
+				margin-top: 0;
 			}
 
 				#header > *:before {
@@ -1500,9 +1500,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 850px) {
-
+            
+            #wrapper{
+            	padding: 0;
+            }
 			#header {
-				padding: 1.5rem 0;
+				// padding: 1.5rem 0;
 			}
 
 				#header .content .inner {
