@@ -55,5 +55,18 @@ $(document).ready(function(){
     if (!isClickInsideMenu && !isClickOnHamburger) {
       closeMenu();
     }
+
+     if ($menu.hasClass('open') && !isClickInsideMenu && !isClickOnHamburger) {
+    closeMenu();
+  }
   });
+
+  $(document).on('mousedown', function (e) {
+  const isClickInsideMenu = $(e.target).closest('#slideMenu').length > 0;
+  const isClickOnHamburger = $(e.target).closest('#hamburger').length > 0;
+
+  if (!isClickInsideMenu && !isClickOnHamburger) {
+    closeMenu(); // Call your close function
+  }
+});
 });
